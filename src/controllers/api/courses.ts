@@ -1,7 +1,7 @@
 import { Request, Response } from "express";
 import Deploma from "../../models/diplomas.js";
 import Course from "../../models/courses.js";
-import courses from "../../courses.js";
+import mockCourse from "../../courses.js";
 
 import { CourseType } from "../../types/course";
 import {

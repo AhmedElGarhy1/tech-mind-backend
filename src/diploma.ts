@@ -1,6 +1,6 @@
 import { DiplomaType } from "./types/diploma";
 
-const diploma: DiplomaType = {
+const mockDiploma: DiplomaType = {
   name: { EN: "Data Science and AI", AR: "علوم البيانات و الذكاء الاصطناعى" },
   description: {
     EN: "The course is based on practical application and building real projects and machine learning models and applications",
@@ -117,12 +117,10 @@ const diploma: DiplomaType = {
       },
     },
   ],
-  other_src:
-    "https://firebasestorage.googleapis.com/v0/b/techmind-assets.appspot.com/o/Diplomas%2FDS_Main.jfif?alt=media&token=f13928cf-add8-40af-be43-6cd90bd1cd6f",
-  main_img:
-    "https://firebasestorage.googleapis.com/v0/b/techmind-assets.appspot.com/o/Diplomas%2FDS_Main.jfif?alt=media&token=f13928cf-add8-40af-be43-6cd90bd1cd6f",
+  other_src: "otherSrc",
+  main_img: "mainImage",
   courses: [],
   have_video: false,
 };
 
-export default diploma;
+export default mockDiploma;

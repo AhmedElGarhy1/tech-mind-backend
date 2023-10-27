@@ -14,7 +14,7 @@ import {
   getSkipLimit,
   updateTechImages,
 } from "../../utils/index.js";
-import diploma from "../../diploma.js";
+import mockDiploma from "../../diploma.js";
 
 const getDiploma = async (req: Request, res: Response): Promise<void> => {
   // get diploma id

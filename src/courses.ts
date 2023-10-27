@@ -1,5 +1,5 @@
 import { CourseType } from "./types/course";
-const courses: CourseType = {
+const mockCourse: CourseType = {
   name: {
     AR: "أساسيات البرمجة بلغة بايثون",
     EN: "Basics of programming in Python language",
@@ -98,11 +98,9 @@ const courses: CourseType = {
   ],
   have_target: false, // to display
   is_dependent: true,
-  icon: "https://firebasestorage.googleapis.com/v0/b/techmind-assets.appspot.com/o/Courses%2FPython_Icon.png?alt=media&token=81a0f41d-df07-43c8-b87d-fd9f1f440776",
-  main_img:
-    "https://firebasestorage.googleapis.com/v0/b/techmind-assets.appspot.com/o/Courses%2FPython_OtherSrc.jfif?alt=media&token=1f09632d-8ba0-48e8-bb1b-6d717fe10979",
-  other_src:
-    "https://firebasestorage.googleapis.com/v0/b/techmind-assets.appspot.com/o/Courses%2FPython_OtherSrcgif.gif?alt=media&token=2126680e-03f3-4ef0-a994-e9cc8b631aa9",
+  icon: "icon",
+  main_img: "mainImage",
+  other_src: "otherSourse",
   have_objectives: false,
   objectives: [
     {
@@ -119,4 +117,4 @@ const courses: CourseType = {
   ],
 };
 
-export default courses;
+export default mockCourse;

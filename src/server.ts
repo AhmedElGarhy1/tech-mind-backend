@@ -6,7 +6,7 @@ import dotenv from "dotenv";
 dotenv.config();
 
 import routes from "./routes/index.js";
-import mongoose, { connect, set } from "mongoose";
+import connectToDB from "./config/database.js";
 
 const app = express();
 
@@ -21,21 +21,13 @@ app.use("/api", routes);
 
 const PORT: number | string = process.env.PORT || 8000;
 
-let mongodbUrl: string = process.env.MONGO_SECRET || "";
-
-// if (process.env.ENV === "dev") mongodbUrl = process.env.MONGO_DEV_SECRET || "";
-
-set("strictQuery", false);
-
-mongoose
-  .connect(mongodbUrl)
-  .then(() =>
-    app.listen(PORT, () =>
-      console.log("Connected to DB && Listening on PORT " + PORT)
-    )
-  )
-  .catch((e) => {
-    console.log("Connection Error");
-    console.log("----------- -------------- -----------");
-    console.log(e);
+async function main() {
+  return connectToDB().then(() => {
+    app.listen(PORT, () => {
+      console.log("Connected to DB && Listening on PORT " + PORT);
+    });
   });
+}
+main();
+
+export default main;
