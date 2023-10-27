@@ -9,7 +9,7 @@ Techmind is a paltform that enable it's admin to publish new courses/diplomas an
 1. First you need to clone this repository
 
 ```sh
-git clone https://github.com/AhmedElGarhy1/tech-mind.git
+git clone https://github.com/AhmedElGarhy1/tech-mind-backend.git
 ```
 
 2. install node from [Download NodeJS](https://nodejs.org/en/download)
@@ -30,4 +30,4 @@ npm run seed
 
 ### API Documentation
 
-The documentation is available at: https://github.com/AhmedElGarhy1/tech-mind/API.md
+The documentation is available at: [API Documentation](https://github.com/AhmedElGarhy1/tech-mind-backend/blob/main/API.md)
